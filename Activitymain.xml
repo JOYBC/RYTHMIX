@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ght"
+        android:textColor="@color/material_dynamic_tertiary60"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <Button
+        android:id="@+id/play_arrow"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/play_arrow"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="79dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/pause"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/frontfast"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/baseline_fast_forward_24"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backfast"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/baseline_fast_rewind_24"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="400dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/Song_title"
+        android:layout_width="105dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="280dp"
+        android:text="Small text"
+        android:textColor="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="288dp"
+        android:text="SONG TITLE"
+        android:textColor="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
